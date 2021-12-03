@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Compute the value</title>
+</head>
+<body>
+	<h2>Compute:x+x/2+x/4+x/8</h2>
+	<label>x</label>
+	<input type="text" id="r"/><br><br>
+	<input type = "button" onclick = "comp()" value = "result"/><br><br>
+	<div id="res"></div>
+	<script>
+		function comp()
+		{
+			var x=parseInt(document.getElementById("r").value);
+			var result=x+x/2+x/4+x/8;
+			document.getElementById("res").innerHTML=result;
+		}
+	</script>
+</body>
+</html>
